@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Nunito:wght@700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
 
@@ -17,7 +18,7 @@
   </head>
 
   <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header class="header-container">
       <h1 class="main-title">Haidar Ramadhan</h1>
 
@@ -25,12 +26,11 @@
         Assalamualaikum, saya merupakan mahasiswa Informatika di Universitas
         Teknokrat Indonesia yang memiliki minat di bidang Data Analytics dan
         Machine Learning. Berikut adalah beberapa proyek yang telah saya
-        kerjakan dan pelajari, beserta sertifikat pendukung sebagai bagian dari
-        proses pengembangan keterampilan saya.
+        kerjakan beserta sertifikat pendukung sebagai bagian dari proses
+        pengembangan keterampilan saya.
       </p>
 
       <div class="icon-group">
-        <!-- Email -->
         <a
           href="mailto:haidar.ramadhan579@gmail.com"
           class="icon-link"
@@ -39,17 +39,15 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
-            fill="none"
+            fill="currentColor"
             aria-hidden="true"
           >
             <path
-              fill="currentColor"
               d="M1.875 2.5A1.875 1.875 0 0 0 .75 5.875l8.5 6.375a1.254 1.254 0 0 0 1.5 0l8.5-6.375A1.876 1.876 0 0 0 18.125 2.5H1.875ZM0 6.875V15c0 1.379 1.121 2.5 2.5 2.5h15c1.379 0 2.5-1.121 2.5-2.5V6.875l-8.5 6.375c-.89.668-2.11.668-3 0L0 6.875Z"
             />
           </svg>
         </a>
 
-        <!-- WhatsApp -->
         <a
           href="https://wa.me/6282178891674"
           class="icon-link"
@@ -71,122 +69,78 @@
       </div>
 
       <hr class="page-divider" />
+
+      <nav class="section-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#certificates">Certificates</a>
+      </nav>
     </header>
 
-    <!-- Work Section -->
-    <main class="work-container">
-      <h2 class="section-title">Work</h2>
-      <p class="section-subtitle">- - -</p>
+    <main>
+      <!-- Work Section -->
+      <section class="section-container" id="work">
+        <h2 class="section-title">Work</h2>
 
-      <div class="work-grid">
-        <article class="project-card">
-          <img
-            src="imgs/img-placeholder.jpg"
-            alt="Project preview"
-            class="preview"
-          />
-          <div class="card-details">
-            <h3 class="card-title">Project with 2 links</h3>
-            <p class="card-subtitle">Stack: HTML / CSS / Your stack</p>
-            <div class="link-group">
-              <a href="#" class="navigation-link" target="_blank"
-                >Preview &gt;</a
-              >
-              <a href="#" class="navigation-link" target="_blank">Code &gt;</a>
-            </div>
-          </div>
-        </article>
+        <p class="section-subtitle">
+          Preview berisi ringkasan proyek, sedangkan Code mengarah ke source
+          code dan analisis yang lebih detail.
+        </p>
 
-        <article class="project-card">
-          <img
-            src="imgs/img-placeholder.jpg"
-            alt="Project preview"
-            class="preview"
-          />
-          <div class="card-details">
-            <h3 class="card-title">Project with 1 link</h3>
-            <p class="card-subtitle">Stack: HTML / CSS / Your stack</p>
-            <div class="link-group">
-              <a href="#" class="navigation-link" target="_blank"
-                >Github &gt;</a
-              >
+        <div class="work-grid">
+          <article class="project-card">
+            <div class="preview">
+              <img src="imgs/rfm_segmentation.svg" alt="" class="preview-bg" />
+              <h3 class="preview-title">RFM SEGMENTATION</h3>
             </div>
-          </div>
-        </article>
 
-        <article class="project-card">
-          <img
-            src="imgs/img-placeholder.jpg"
-            alt="Project preview"
-            class="preview"
-          />
-          <div class="card-details">
-            <h3 class="card-title">Project with 2 links</h3>
-            <p class="card-subtitle">Stack: HTML / CSS / Your stack</p>
-            <div class="link-group">
-              <a href="#" class="navigation-link" target="_blank"
-                >Preview &gt;</a
-              >
-              <a href="#" class="navigation-link" target="_blank">Code &gt;</a>
-            </div>
-          </div>
-        </article>
+            <div class="card-details">
+              <h3 class="card-title">RFM Segmentation</h3>
 
-        <article class="project-card">
-          <img
-            src="imgs/img-placeholder.jpg"
-            alt="Project preview"
-            class="preview"
-          />
-          <div class="card-details">
-            <h3 class="card-title">Project with 1 link</h3>
-            <p class="card-subtitle">Stack: HTML / CSS / Your stack</p>
-            <div class="link-group">
-              <a href="#" class="navigation-link" target="_blank"
-                >Github &gt;</a
-              >
-            </div>
-          </div>
-        </article>
+              <p class="card-subtitle">
+                Analisis perilaku pelanggan berdasarkan Recency, Frequency, dan
+                Monetary.
+              </p>
 
-        <article class="project-card">
-          <img
-            src="imgs/img-placeholder.jpg"
-            alt="Project preview"
-            class="preview"
-          />
-          <div class="card-details">
-            <h3 class="card-title">Project with 2 links</h3>
-            <p class="card-subtitle">Stack: HTML / CSS / Your stack</p>
-            <div class="link-group">
-              <a href="#" class="navigation-link" target="_blank"
-                >Preview &gt;</a
-              >
-              <a href="#" class="navigation-link" target="_blank">Code &gt;</a>
-            </div>
-          </div>
-        </article>
+              <div class="link-group">
+                <a
+                  href="#"
+                  class="navigation-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Preview &gt;
+                </a>
 
-        <article class="project-card">
-          <img
-            src="imgs/img-placeholder.jpg"
-            alt="Project preview"
-            class="preview"
-          />
-          <div class="card-details">
-            <h3 class="card-title">Project with 1 link</h3>
-            <p class="card-subtitle">Stack: HTML / CSS / Your stack</p>
-            <div class="link-group">
-              <a href="#" class="navigation-link" target="_blank"
-                >Github &gt;</a
-              >
+                <a
+                  href="https://github.com/Haidar-Ramadhan/rfm-segmentation"
+                  class="navigation-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code &gt;
+                </a>
+              </div>
             </div>
-          </div>
-        </article>
-      </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section class="section-container certificates-section" id="certificates">
+        <h2 class="section-title">Certificates</h2>
+
+        <p class="section-subtitle">
+          Sertifikat yang mendukung proses pembelajaran dan pengembangan
+          keterampilan saya.
+        </p>
+
+        <div class="certificate-grid">
+          <!-- Add certificate cards here when available. -->
+        </div>
+      </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="footer-container">
       <p class="footer-signature">Haidar Ramadhan</p>
     </footer>
